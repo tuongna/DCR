@@ -1,0 +1,32 @@
+$header-height: 54px;
+$left-sidebar-width: 200px;
+
+.dcr-page-navbar-top,
+.dcr-page-navbar-left {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.dcr-page-navbar-top {
+  width: 100vw;
+  height: $header-height;
+}
+
+.dcr-page-navbar-left {
+  width: $left-sidebar-width;
+  height: calc(100vh - #{$header-height});
+  margin-top: $header-height;
+  overflow: auto;
+}
+
+.dcr-page-content {
+  margin-top: $header-height;
+  margin-left: $left-sidebar-width;
+}
+
+.dcr-dicom-viewer {
+  width: 100%;
+  height: calc(100vh - #{$header-height});
+}
